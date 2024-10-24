@@ -1,24 +1,30 @@
+
+import "./Main.css";
+
+
 const Main = () => {
+  const user = {
+
+
+
+    name: "석민준",
+    isLogin: true,
+
+  };
   
-  const number = 10;
-  const obj = {a:1};
+  if (user.isLogin) {
+    return (
+    <div
+      className="logout">
+      로그아웃
+      </div>
+    );
 
+  } else {
+    return <div>로그인</div>;
+  }
 
-  return (
-
-    <main>
-      <h1>main</h1>
-      <h2>{number % 2 === 0? "짝수" : "홀수"}</h2>
-      {10}
-      {number}
-      {[1, 2, 3]}
-      {true}
-      {undefined}
-      {null}
-      {obj.a}
-
-    </main>
-  );
+  
 };
 
 export default Main;
