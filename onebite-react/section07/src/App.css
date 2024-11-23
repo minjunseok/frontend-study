@@ -1,0 +1,21 @@
+body {
+
+  padding: 20px; /* 내부 여백 */
+}
+
+.App {
+  margin: 0 auto; /* App 컴포넌트의 크기 자동 조절 */
+  width: 400px;   /* 너비 */
+}
+
+
+
+.App > section {
+
+  background-color: rgb(255, 253, 208); /* 배경색 */
+  border: 1px solid rgb(240, 240, 240); /* 경계선 여기서 solid는 직선을 의미한다. */
+  border-radius: 5px;                     /* 모서리 둥금 정도 */
+  padding: 20px;                          /* 내부 여백 */
+  margin-bottom: 10px;                    /* 아랫 방향 외부 여백 */
+
+}
