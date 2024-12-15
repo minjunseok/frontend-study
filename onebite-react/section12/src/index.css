@@ -25,14 +25,11 @@
   box-shadow: rgb(100, 100, 100, 0.2) 0px 0px 29px 0px;
   padding: 0px 20px;
   
+  
 
 }
 
-img {
-  width: 100%; /* 부모 요소의 너비에 맞춤 */
-  height: 100%; /* 부모 요소의 높이에 맞춤 */
-  object-fit: cover; /* 이미지 비율을 유지하며 크기에 맞게 자름 */
-}
+
 
 body * {
 
