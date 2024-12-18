@@ -5,10 +5,12 @@
 
 }
 
-  html, body {
+  html,
+  body {
     margin: 0px;
     width: 100%;
     background-color: rgb(255, 244, 179);
+    display: flex;
   }
 
 
