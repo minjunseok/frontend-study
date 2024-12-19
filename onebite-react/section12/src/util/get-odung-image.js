@@ -6,6 +6,7 @@ import odung5 from "./../assets/odung5.png";
 import odung6 from "./../assets/odung6.png";
 
 
+
 export function getOdungImage (odungId) {
 
   switch(odungId) {

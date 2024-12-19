@@ -16,7 +16,8 @@ const New = () => {
 
   const onSubmit = (input) => {
   
-    onCreate(input.createdDate.getTime(),
+    onCreate(
+     input.createdDate.getTime(),
      input.emotionId,
      input.content
     );

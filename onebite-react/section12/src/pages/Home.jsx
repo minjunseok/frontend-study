@@ -3,6 +3,8 @@ import Button from "../components/Button";
 import DiaryList from "../components/DiaryList";
 import { useState, useContext } from "react";
 import { DiaryStateContext } from "../App";
+import { getOdungImage } from "../util/get-odung-image";
+import "../components/MainOdung.css";
 
 const getMonthlyData = (pivotDate, data) => {
   const beginTime = new Date(
@@ -57,6 +59,15 @@ const Home = () => {
         leftChild={<Button onClick={onDecreaseMonth} text={"<"} />}
         rightChild={<Button onClick={onIncreaseMonth} text={">"} />}
       />
+
+      <section className="mainOdung">
+      <div className="mainOdung">
+        <img src={getOdungImage(6)}/>
+        </div>
+        <div className="mainOdung-title">
+          오둥이 감정일기🐥
+        </div>
+        </section>
       <DiaryList data={monthlyData} />
     </div>
   );
