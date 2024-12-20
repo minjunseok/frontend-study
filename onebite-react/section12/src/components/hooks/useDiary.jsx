@@ -29,7 +29,7 @@ const useDiary = (id) => {
   
       setCurrentItem(currentDiaryItem);
 
-  },[id, data]);
+  },[id]);
 
   return currentDiaryItem;
 

@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Button from "../components/Button";
 import Editor from "../components/Editor";
 import { useNavigate  } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { DiaryDispatchContext } from "../App";
 
 
@@ -13,6 +13,14 @@ const New = () => {
   const { onCreate } = useContext(DiaryDispatchContext);
 
   const nav = useNavigate();
+
+
+
+  useEffect(()=> {
+
+    const $title = document.getElementsByTagName("title")[0];
+    $title.innerText = "새 일기 쓰기";
+  }, []);
 
   const onSubmit = (input) => {
   

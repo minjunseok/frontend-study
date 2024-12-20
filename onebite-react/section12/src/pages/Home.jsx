@@ -4,6 +4,7 @@ import DiaryList from "../components/DiaryList";
 import { useState, useContext } from "react";
 import { DiaryStateContext } from "../App";
 import { getOdungImage } from "../util/get-odung-image";
+import usePageTitle from "../components/hooks/usePageTitle";
 import "../components/MainOdung.css";
 
 const getMonthlyData = (pivotDate, data) => {
@@ -34,6 +35,7 @@ const getMonthlyData = (pivotDate, data) => {
 const Home = () => {
   const data = useContext(DiaryStateContext);
   const [pivotDate, setPivotDate] = useState(new Date());
+  usePageTitle("감정 일기장");
 
   const monthlyData = getMonthlyData(pivotDate, data);
   console.log(monthlyData);
