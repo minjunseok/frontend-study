@@ -1,0 +1,82 @@
+
+
+
+.app-container {
+  margin: auto; /* 외부 여백 추가 */
+  padding: auto; /* 내부 여백 추가 */
+  box-sizing: border-box; /* 패딩 포함한 크기 계산 */
+  background-color: ;
+}
+
+
+.box {
+
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 430px;
+  height: 430px;
+  margin: 15px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box; /* padding과 border를 포함한 전체 크기를 고정 */
+  
+
+}
+
+.box.draw {
+  
+  border: 10px solid black;
+  border-color: black; /* 무승부 */
+}
+
+.box.win {
+  border: 10px solid green;
+  border-color: green; /* 승리 */
+}
+
+.box.lose {
+  border: 10px solid red;
+  border-color: red; /* 패배 */
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: none;
+  
+  
+}
+
+.button button {
+
+  border-radius: 10px; /* 이미지 둥글게 */
+  padding: 5px; /* 버튼의 안쪽 여백 */
+  cursor: pointer; /* 클릭 가능한 상태 표시 */
+  display: inline-block; /* 버튼의 정렬 방식 */
+  text-align: center;
+  background-color: white;
+}
+
+
+.button img {
+  width: 100px; /* 이미지 크기 */
+  height: 100px;
+  object-fit: cover; /* 이미지 비율 유지 */
+  border-radius: 10px; /* 이미지 둥글게 */
+}
+
+
+
+
+
+.main {
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+
