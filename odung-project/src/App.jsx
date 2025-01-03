@@ -1,11 +1,12 @@
 
-
-import { useState } from "react";
 import './css/App.css';
+import { useState , useEffect } from "react";
+import { itemChoice } from "./utils/itemChoice";
+import { judgement } from "./utils/gameLogic";
+import Result from "./components/Result";
+import Header from "./components/Header";
 import Box from './components/Box';
 import Button from "./components/Button";
-import { itemChoice } from "./utils/itemChoice";
-import Result from "./components/Result";
 
 
 // 1. 박스 두개 (타이틀, 사진정보, 결과값)
@@ -50,43 +51,79 @@ function App() {
   
 
   // 가위바위보마다 다르게 보여주기 위해 설정한 state
+
   const [userSelect, setUserSelect] = useState(null);
+
+  // 컴퓨터와 관련된 state
   const [computerSelect,setComputerSelect] = useState(null);
+
+  //게임 승패를 다루기 위한 state
   const [result, setResult] = useState("");
+
+  //승리,패배 횟수를 카운팅 하기 위한 state
+  const [winCount, setWinCount] = useState(0);
+  const [loseCount, setLoseCount] = useState(0);
+
+
+  // 승패를 증감하기 위한 카운트 함수
+
+  const countResult = (userResult) => {
+
+    console.log(userResult);
+
+    if(userResult === "win") {
+
+      setWinCount(winCount + 1);
+
+    } else if(userResult === "lose") {
+
+      setLoseCount(loseCount + 1);
+
+    } else {
+
+      return;
+
+    };
+
+};
+
 
   // 가위바위보 버튼 이벤트 핸들러 함수
   const playButtonClick =(userChoice)=>{
 
   setUserSelect(choice[userChoice]);
 
-  let computerChoice = randomChoice();
+ 
+
+  let computerChoice = randomChoice(choice);
 
   setComputerSelect(computerChoice);
 
-  setResult(judgement(choice[userChoice],computerChoice));
+  const gameResult = judgement(choice[userChoice],computerChoice);
 
+  setResult(gameResult);
 
+  countResult(gameResult);
+
+  
 
 
   };
 
+  useEffect(() => {
+    console.log("승리 :", winCount);
+  }, [winCount]);
   
+  useEffect(() => {
+    console.log("패배 :", loseCount);
+  }, [loseCount]);
+
   
 
-const judgement = (user, computer) =>{
 
-  console.log("user", user, "computer", computer );
-  console.log(user.name, computer.name);
-
-  if(user.name === computer.name) {
-
-    return "draw";
-
-  } else if(user.name === "rock") return computer.name === "scissors" ? "win" : "lose";
-    else if(user.name === "paper") return computer.name === "rock" ? "win" : "lose";
-    else if(user.name === "scissors") return computer.name === "paper" ? "win" : "lose";
   
-}
+
+
 
 
 
@@ -120,55 +157,70 @@ const randomChoice =()=>{
   return (
 
     <div>
-      <div className="app-container">
 
-        <div className='main'>
-          <Box
-          title="당신"
-          item={userSelect}
-          result={result}
-          />
-          <Box
-          title="컴퓨터"
-          item={computerSelect}
-          result={result}
+      <div className="app-wrapper">
+
+        <div className="app-container">
+
+           
+            <Header />
+            <div className='result-count'>
+              승리 : {winCount}  패배 : {loseCount}
+            </div>
+
+            <div className='reset'>
+              
+            </div>
+
+          <div className='main'>
+            <Box
+            title="👉 당신"
+            item={userSelect}
+            result={result}
             />
-      </div>
+            <Box
+            title="💻 컴퓨터"
+            item={computerSelect}
+            result={result}
+              />
+          </div>
 
+          
+            <Result
+            result={result}
+            />
         
-          <Result
-          result={result}
-          />
-      
 
 
-        <div className='button'>
+          <div className='button'>
 
-            <Button
-            onClick={() => playButtonClick("scissors")}
-            name="가위" 
-            img='src/assets/sicssors.jpg'
-            className='scissors'
-            />
-
-            <Button
-            onClick={() => playButtonClick("rock")}
-            name="바위"
-            img='src/assets/rock.jpg'
-            className='rock'
-            />
-            
               <Button
-            onClick={() => playButtonClick("paper")}
-            name="보"
-            img='src/assets/paper.jpg'
-            className='paper'
-            />
-    
+              onClick={() => playButtonClick("scissors")}
+              name="가위" 
+              img='src/assets/sicssors.jpg'
+              className='scissors'
+              />
+
+              <Button
+              onClick={() => playButtonClick("rock")}
+              name="바위"
+              img='src/assets/rock.jpg'
+              className='rock'
+              />
+
+                <Button
+              onClick={() => playButtonClick("paper")}
+              name="보"
+              img='src/assets/paper.jpg'
+              className='paper'
+              />
+      
+          </div>
+
         </div>
 
       </div>
-  
+
     </div>
     
 

@@ -4,7 +4,7 @@ const Box = (props) => {
   let result;
 
   if(
-    props.title === "컴퓨터" &&
+    props.title === "💻 컴퓨터" &&
     props.result !== "draw" &&
     props.result !== "") {
       result = props.result === "win" ? "lose" : "win";

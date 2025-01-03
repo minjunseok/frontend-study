@@ -1,0 +1,8 @@
+  .header-title {
+    font-size: 20px; /* 텍스트 크기 */
+    color:  #b59840; /* 텍스트 색상 */
+    font-weight: bold; /* 굵은 글씨 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin-top: 40px; /* 위쪽 여백 */
+    margin-bottom: 40px;
+  }

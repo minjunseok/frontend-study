@@ -1,14 +1,31 @@
 
 
-
-.app-container {
-  margin: auto; /* 외부 여백 추가 */
-  padding: auto; /* 내부 여백 추가 */
-  box-sizing: border-box; /* 패딩 포함한 크기 계산 */
-  background-color: ;
+/* 겉배경  */
+html,
+body {
+  margin: 50px;
+  width: 100%;
+  background-color: rgb(255, 244, 179);
+  display: flex;
 }
 
+/* 앱 내부 */
+#root {
+  
+  border-radius: 50px;
+  background-color: white;
+  width: 800px; /* 고정된 너비 설정 */
+  height: 1000px; /* 고정된 높이 설정 */
+  margin: 0 auto;
+  min-height: 10vh;
+  box-shadow: rgb(100, 100, 100, 1) 0px 0px 10px 0px;
+  padding: 0px 80px;
+  
+  
 
+}
+
+/* 결과 박스 */
 .box {
 
   border: 5px solid black;
@@ -80,3 +97,13 @@
 
 }
 
+.result-count {
+
+  font-size: 20px; /* 텍스트 크기 */
+  color: #333; /* 텍스트 색상 */
+  font-weight: bold; /* 굵은 글씨 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  margin-top: 40px; /* 위쪽 여백 */
+  margin-bottom: 40px;
+
+}
