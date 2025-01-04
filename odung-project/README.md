@@ -8,6 +8,11 @@ React.js를 학습하기 위한 미니 프로젝트입니다.
 오둥이를 매우 좋아해서 해당 미니 프로젝트에도 오둥이를 곁들였습니다.🐥
 
 <br>
+
+실행 링크 : https://rocksicssorspaper.vercel.app
+
+
+<br>
 <br>
 
 언어 
