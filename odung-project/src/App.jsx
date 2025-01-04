@@ -69,7 +69,6 @@ function App() {
 
   const countResult = (userResult) => {
 
-    console.log(userResult);
 
     if(userResult === "win") {
 
@@ -111,11 +110,9 @@ function App() {
   };
 
   useEffect(() => {
-    console.log("승리 :", winCount);
   }, [winCount]);
-  
+
   useEffect(() => {
-    console.log("패배 :", loseCount);
   }, [loseCount]);
 
   
@@ -123,7 +120,12 @@ function App() {
 
   
 
+const resetCount =()=>{
 
+  setWinCount(0);
+  setLoseCount(0);
+
+}
 
 
 
@@ -136,8 +138,6 @@ const randomChoice =()=>{
 
   let itemArray = Object.keys(choice);
 
-  console.log("item array", itemArray);
-
   //Math.random() 소수점의 랜덤한 수치를 하나 생성해준다.
   // Math.floor() = 소수점 아래에 있는 함수를 모두 버린다.
 
@@ -145,8 +145,6 @@ const randomChoice =()=>{
   let final = itemArray[randomItem];
 
 
-  console.log("random value", randomItem);
-  console.log("final" ,final);
 
   return choice[final];
 
@@ -164,13 +162,20 @@ const randomChoice =()=>{
 
            
             <Header />
-            <div className='result-count'>
-              승리 : {winCount}  패배 : {loseCount}
-            </div>
 
-            <div className='reset'>
-              
+            <div className='result-reset-container'>
+              <div className='result-count'>
+                승리 : {winCount}  패배 : {loseCount}
+              </div>
+
+              <div className='reset'>
+              <button 
+                onClick={resetCount}>
+                  Reset
+                </button>
+              </div>
             </div>
+          
 
           <div className='main'>
             <Box
@@ -185,10 +190,13 @@ const randomChoice =()=>{
               />
           </div>
 
-          
-            <Result
-            result={result}
+          <div className={`result${result ? 'visible' : ''}`}>
+              <Result
+              result={result}
             />
+            </div>
+
+    
         
 
 

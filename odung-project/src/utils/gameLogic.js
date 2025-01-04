@@ -3,8 +3,6 @@
 
 export const judgement = (user, computer) =>{
 
-  console.log("user", user, "computer", computer );
-  console.log(user.name, computer.name);
 
   if(user.name === computer.name) {
 

@@ -1,10 +1,16 @@
 .result {
+
+  min-height: 50px; /* Result 컴포넌트가 차지할 최소 높이 설정 */
+  justify-content: center;
+  align-items: center;
   font-size: 35px; /* 텍스트 크기 */
   color: #333; /* 텍스트 색상 */
   font-weight: bold; /* 굵은 글씨 */
   text-align: center; /* 텍스트 가운데 정렬 */
-  margin-top: 20px; /* 위쪽 여백 */
+  margin-bottom: 20px;
+
 }
+
 
 .result.win {
   color: green; /* 승리 메시지 색상 */
@@ -13,3 +19,4 @@
 .result.lose {
   color: red; /* 패배 메시지 색상 */
 }
+
