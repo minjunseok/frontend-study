@@ -205,21 +205,21 @@ const randomChoice =()=>{
               <Button
               onClick={() => playButtonClick("scissors")}
               name="가위" 
-              img='public/sicssors.jpg'
+              img='/public/sicssors.jpg'
               className='scissors'
               />
 
               <Button
               onClick={() => playButtonClick("rock")}
               name="바위"
-              img='public/rock.jpg'
+              img='/public/rock.jpg'
               className='rock'
               />
 
                 <Button
               onClick={() => playButtonClick("paper")}
               name="보"
-              img='public/paper.jpg'
+              img='/public/paper.jpg'
               className='paper'
               />
       
