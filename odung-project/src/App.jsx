@@ -2,6 +2,7 @@
 import './css/App.css';
 import { useState , useEffect } from "react";
 import { itemChoice } from "./utils/itemChoice";
+import { rpcChoice } from "./utils/rpcChoice";
 import { judgement } from "./utils/gameLogic";
 import Result from "./components/Result";
 import Header from "./components/Header";
@@ -205,21 +206,21 @@ const randomChoice =()=>{
               <Button
               onClick={() => playButtonClick("scissors")}
               name="가위" 
-              img='/public/sicssors.jpg'
+              img={rpcChoice(3)}
               className='scissors'
               />
 
               <Button
               onClick={() => playButtonClick("rock")}
               name="바위"
-              img='/public/rock.jpg'
+              img={rpcChoice(1)}
               className='rock'
               />
 
                 <Button
               onClick={() => playButtonClick("paper")}
               name="보"
-              img='/public/paper.jpg'
+              img={rpcChoice(2)}
               className='paper'
               />
       
