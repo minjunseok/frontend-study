@@ -1,8 +1,30 @@
-# React + Vite
+# React.js를 이용한 간단한 가위바위보 게임
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+React.js를 학습하기 위한 미니 프로젝트입니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+- 언어 
+
+JavaScript,CSS,HTML
+
+
+- 라이브러리 
+
+React.js
+
+
+- 환경
+
+Node.js
+
+
+- 배포 
+
+Vercel
+
+
+- Tool
+
+VsCode
