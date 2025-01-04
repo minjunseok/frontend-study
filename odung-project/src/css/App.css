@@ -4,6 +4,7 @@
 html,
 body {
  
+ 
   width: 100%;
   background-color: rgb(255, 244, 179);
   display: flex;
@@ -18,12 +19,13 @@ body {
   
   border-radius: 50px;
   background-color: white;
-  width: 800px; /* 고정된 너비 설정 */
+  max-width: 600px;
+  width: 100%; /* 고정된 너비 설정 */
   height: 1000px; /* 고정된 높이 설정 */
   margin: 0 auto;
-  min-height: 10vh;
+  min-height: 100vh;
   box-shadow: rgb(100, 100, 100, 1) 0px 0px 10px 0px;
-  padding: 0px 80px;
+  padding: 0px 20px;
  
 
   
