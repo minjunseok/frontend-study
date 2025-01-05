@@ -1,0 +1,42 @@
+body {
+
+  background : url(https://static.vecteezy.com/system/resources/previews/003/617/634/non_2x/bright-blue-sky-background-with-clouds-free-vector.jpg);
+
+  /* 화면 높이에 100% */
+  height:100vh; 
+
+  /* 화면이 사이즈에 맞게 나오고 반복되어지지 않게 한다. */
+  background-repeat: no-repeat;
+
+  /* background-repeat 옵션을 끔으로써 반복이 되지 않기 때문에 공백이 생기기 때문에 완전히 덮게끔 설정 */
+  background-size: cover;
+
+}
+
+
+.container{
+
+  /* 수평으로 배치 */
+  display: flex;
+  
+  /* 요소 중앙 정렬 */
+  justify-content: center;
+
+  /* 요소 세로 정렬 */
+  align-items: center;
+
+  height: 100vh;
+
+  flex-direction: column;
+
+
+}
+
+.weather-box{
+
+  border: 2px solid rgb(224, 246, 250);
+  border-radius: 10px;
+  padding: 100px;
+  background-color: rgb(224, 246, 250);
+  
+}
