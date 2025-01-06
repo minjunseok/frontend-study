@@ -1,15 +1,28 @@
 import { Button } from "react-bootstrap";
 
-const WeatherButton = () => {
+const WeatherButton = ({cities,setCity,fetchWeatherAndAirPollution}) => {
+
+  console.log(cities);
+
   return (
     <div>
-      <Button variant="secondary">현재 위치</Button>
-      <Button variant="secondary">한국</Button>
-      <Button variant="secondary">일본</Button>
-      <Button variant="secondary">중국</Button>
-      <Button variant="secondary">미국</Button>
+      <Button variant="secondary"
+        onClick={fetchWeatherAndAirPollution}>
+          현재 위치
+          </Button>
+
+        {cities.map((item, index) => (
+          <Button
+            variant="secondary"
+            key={index}
+            onClick={()=>setCity(item)}
+           >
+            {item}
+          </Button>
+        ))}
+       
     </div>
-  )
-}
+  );
+};
 
 export default WeatherButton

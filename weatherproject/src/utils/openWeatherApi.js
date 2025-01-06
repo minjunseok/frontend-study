@@ -3,6 +3,8 @@
 // 위도 경도 데이터 모듈함수
 
 export const getCurrentLocation = async () => {
+
+  
   if (!navigator.geolocation) {
     throw new Error("Geolocation is not supported by your browser.");
   }
@@ -56,6 +58,8 @@ export const getLocationAirPollution = async (lat, lon) => {
   };
 
 
+
+
     // 유의점 1. await을 사용하기 위해 async를 붙여준다 
     // 유의점 2. api 사용을 위해 보통은 json 데이터를 추출해야한다.
 
@@ -86,3 +90,7 @@ export const getLocationAirPollution = async (lat, lon) => {
     };
 
 
+
+
+
+ 
