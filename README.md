@@ -13,6 +13,7 @@
 
 - 오둥이 카운팅 앱 🔢
   <br />
+  https://odungcounter.vercel.app/
 
   설명 : 간단한 버튼으로 조작하는 카운팅 앱
 
@@ -31,6 +32,8 @@
   <br />
 - 오둥이 TodoList 📝
 
+  https://todolist-pi-bay.vercel.app/
+
   설명 : 오늘의 할 일을 기록하는 TodoList
   
   개발언어 : HTML, CSS, JavaScript
@@ -48,6 +51,9 @@
   <br />
 
 - 오둥이 감정일기📖
+  <br/>
+
+  https://odung-diary.vercel.app/
 
   설명 : 로컬환경에서 실행 가능한 그날의 감정을 기록할 수 있는 일기장
 
@@ -65,6 +71,9 @@
   <br />
   <br />
 - 오둥이 가위바위보🎮
+  <br />
+  https://rocksicssorspaper.vercel.app/
+  
 
   설명 : 컴퓨터와 간단하게 할 수 있는 가위바위보 게임!
 
