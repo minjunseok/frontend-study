@@ -1,5 +1,10 @@
 
 import { useEffect , useState } from 'react'
+
+import { getLocationAirPollution ,
+         getWeatherByCurrentLocation,
+         getCurrentLocation } from './utils/openWeatherApi';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import WeatherBox from './components/WeatherBox';
@@ -11,32 +16,33 @@ import './App.css'
 function App() {
 
 
-  const getCurrentLocation = () => {
-    navigator.geolocation.getCurrentPosition((position) => {
+  const [weather,setWeather] = useState(null);
+  const [airPollution,setAirPollution] = useState(null);
 
-      let lat = position.coords.latitude;
-      let lon = position.coords.longitude;
-      console.log("현재 위치" , lat , lon );
-      getWeatherByCurrentLocation(lat,lon);
+  
+  const fetchWeatherAndAirPollution = async () => {
+    try {
+      const { lat, lon } = await getCurrentLocation(); // 위치 정보 가져오기
+      console.log("가져온 위치", lat, lon);
 
-    });
+      const weatherData = await getWeatherByCurrentLocation(lat, lon);
+      setWeather(weatherData);
+
+      const airPollutionData = await getLocationAirPollution(lat, lon);
+      setAirPollution(airPollutionData);
+
+    } catch (error) {
+      console.error("데이터를 가져오는 중 에러 발생:", error);
+    }
   };
 
-  // 유의점 1. await을 사용하기 위해 async를 붙여준다 
-  // 유의점 2. api 사용을 위해 보통은 json 데이터를 추출해야한다.
-  const getWeatherByCurrentLocation = async (lat, lon) => {
 
-    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=73c10d78497ac8346d911fea8f5418d6`;
-    
-    let response = await fetch(url); // 데이터를 갖고올 때 까지 기다려야하므로 await를 붙임
-    let data = await response.json();  // 비동기적 처리 사용을 위한 await 
-    console.log(data);
-  };
+
 
 
 
   useEffect(() => {
-    getCurrentLocation();
+    fetchWeatherAndAirPollution();
   },[]);
 
   // 1. 앱이 실행될 때 현재 위치기반의 날씨가 보임
@@ -52,7 +58,10 @@ function App() {
 
       <div className="container">
         <Header />
-        <WeatherBox />
+        <WeatherBox
+          weather={weather}
+          airPollution={airPollution}
+        />
         <WeatherButton />
         <Footer />
       </div>

@@ -25,7 +25,13 @@ body {
   /* 요소 세로 정렬 */
   align-items: center;
 
+
+  /* 요소의 높이에 따라 중앙 배치시 윗부분에 붙어있을 때가 있다.
+  상대적으로 짧은 요소를 가운데 배치하기 위해 높이를 추가 */
   height: 100vh;
+
+
+  /* 수직 형태로 정렬 */
 
   flex-direction: column;
 
