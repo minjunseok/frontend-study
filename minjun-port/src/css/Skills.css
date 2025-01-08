@@ -1,0 +1,9 @@
+#Skills {
+  background-color: #56ccf2; /* 파란색 계열 */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  
+}

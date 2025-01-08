@@ -1,8 +1,10 @@
+import '../css/Skills.css';
+
 const Skills = () => {
   return (
-    <div>
-      기술스택입니다.
-    </div>
+    <section id='Skills' className='containner'>
+      기술들입니다.
+    </section>
   )
 }
 

@@ -1,0 +1,27 @@
+
+@font-face {
+
+  font-family: "BMDOHYEON";
+  src: url("/BMDOHYEON.ttf");
+  
+
+}
+
+body * {
+
+  font-family: 'BMDOHYEON';
+
+
+}
+
+
+.container {
+  
+  background-color: #f4f4f4;
+  
+}
+
+
+body {
+  font-family: 'CustomFont', sans-serif; /* 기본 폰트 설정 */
+}

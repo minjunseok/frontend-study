@@ -1,8 +1,10 @@
+import '../css/Archiving.css';
+
 const Archiving = () => {
   return (
-    <div>
+    <section id='Archiving' className='containner'>
       기록소입니다.
-    </div>
+  </section>
   )
 }
 

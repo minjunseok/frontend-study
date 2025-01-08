@@ -1,0 +1,26 @@
+
+
+
+#Banner {
+
+  display: flex; /* Flexbox 활성화 */
+  flex-direction: column; /* 요소들을 세로로 배치 */
+  justify-content: center; /* 세로 중앙 정렬 */
+  background: url('../assets/background.png') no-repeat center center; /* 배경 이미지 경로 */
+  background-size: cover; /* 배경 이미지가 화면을 덮도록 조정 */
+  height: 90vh;
+  text-align: center; /* 텍스트 중앙 정렬 */
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white; /* 텍스트 색상 */
+  
+}
+
+
+h4  {
+  white-space: pre-wrap; /* 줄바꿈 및 공백 유지 */
+  line-height: 1.5;    
+  font-size: 20px;  /* 줄 간격 설정 */
+}
+

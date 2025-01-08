@@ -1,8 +1,10 @@
+import '../css/Projects.css';
+
 const Projects = () => {
   return (
-    <div>
+    <section id='Projects' className='containner'>
       프로젝트들입니다.
-    </div>
+    </section>
   )
 }
 

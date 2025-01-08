@@ -1,0 +1,61 @@
+#Header {
+  
+  top: 0;
+  width: 100%; /* 화면 너비 전체를 차지 */
+  height: 100px; /* 헤더 높이 지정 (필요에 따라 조정) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+ 
+
+  z-index: 1000;
+}
+
+
+.logo button {
+  
+  font-size:15px;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  background: none;
+  transition: color 0.3s ease; 
+
+
+}
+
+/* 커서를 텍스트 위에 올렸을 때 */
+.logo button:hover {
+
+  color: #d1bfbc; /* 텍스트 색상 변경 */
+  
+}
+
+.button {
+
+  cursor: pointer;
+
+}
+
+.button button {
+  
+  padding: 10px;
+  font-size:15px;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  background: none;
+  transition: color 0.3s ease; 
+
+  
+
+}
+
+/* 커서를 텍스트 위에 올렸을 때 */
+.button button:hover {
+
+  color: #d1bfbc; /* 텍스트 색상 변경 */
+  
+}
+

@@ -1,8 +1,10 @@
+import '../css/Career.css';
+
 const Career = () => {
   return (
-    <div>
+    <section id='Career' className='containner'>
       경력입니다.
-    </div>
+  </section>
   )
 }
 
