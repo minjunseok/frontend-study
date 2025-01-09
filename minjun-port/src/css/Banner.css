@@ -25,13 +25,7 @@ h4  {
 }
 
 
-.title h1 {
-  margin-top:200px;
-  display: inline-block; /* 텍스트 길이에 맞게 밑줄을 조정 */
-  border-bottom: 1px solid black; /* 밑줄의 두께와 색상 설정 */
-  padding-bottom: 5px; /* 텍스트와 밑줄 간의 간격 */
-  
-}
+
 
 
 

@@ -1,0 +1,72 @@
+.skill-icon {
+ 
+  width: 50px; /* 원하는 최대 가로 크기 */
+  height: 50px; /* 원하는 최대 세로 크기 */
+  object-fit: contain; /* 비율을 유지하며 지정된 크기에 맞게 조정 */
+}
+
+.skills-content {
+  text-align: center; 
+  gap: 0px;
+  margin: 0px;
+  background-color: rgb(212, 183, 220);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 15px;
+  width: 100vh;
+  height: 70vh;
+  
+}
+
+.skills-content h1 {
+
+  color: rgb(69, 60, 68);
+  text-align: center; 
+  display: inline-block; /* 텍스트 길이에 맞게 밑줄을 조정 */
+  border-bottom: 3px solid rgb(69, 60, 68); /* 밑줄의 두께와 색상 설정 */
+  padding-bottom: 5px; /* 텍스트와 밑줄 간의 간격 */
+  
+}
+
+.skill-box {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 50px; /* 타원형 박스 */
+  color: #fff; /* 텍스트 색상 */
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 부드러운 애니메이션 효과 */
+}
+
+.skill-box:hover {
+  transform: scale(1.2); /* 확대 효과 */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+}
+
+/* 고정된 색상 팔레트 */
+.color-0 { background-color: #ac263a; }
+.color-1 { background-color: #c7aa05; }
+.color-2 { background-color: #4d844d; }
+.color-3 { background-color: #0c8d8d; }
+.color-4 { background-color: #ADD8E6; }
+.color-5 { background-color: #87CEFA; }
+.color-6 { background-color: #FF69B4; }
+.color-7 { background-color: #CD5C5C; }
+.color-8 { background-color: #805129; }
+.color-9 { background-color: #1919b6; }
+.color-10 { background-color: #FFA07A; }
+.color-11 { background-color: #20B2AA; }
+.color-12 { background-color: #B0C4DE; }
+.color-13 { background-color: #FFC0CB; }
+.color-14 { background-color: #DDA0DD; }
+.color-15 { background-color: #FAFAD2; }
+.color-16 { background-color: #B0E0E6; }
+.color-17 { background-color: #40E0D0; }
+.color-18 { background-color: #FF6347; }
+.color-19 { background-color: #8FBC8F; }
+.color-20 { background-color: #DAA520; }
+.color-21 { background-color: #1e9288; }
+.color-22 { background-color: #ff9b7f; }
+.color-23 { background-color: #FFDEAD; }

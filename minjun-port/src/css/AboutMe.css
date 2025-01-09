@@ -14,17 +14,18 @@
   justify-content: center;
  
   gap: 20px; /* 사진과 아이템 사이의 간격 */
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .title h1 {
   
   font-size: 2.5rem;
   margin-bottom: 20px;
+  margin-top: 20px;
 
   display: inline-block; /* 텍스트 길이에 맞게 밑줄을 조정 */
-  border-bottom: 1px solid black; /* 밑줄의 두께와 색상 설정 */
-  padding-bottom: 5px; /* 텍스트와 밑줄 간의 간격 */
+  border-bottom: 3px solid black; /* 밑줄의 두께와 색상 설정 */
+  
   
 }
 
@@ -54,7 +55,3 @@
 }
 
 
-.icon {
-
-
-}

@@ -1,33 +1,26 @@
 #Skills {
   
+ 
   background-color: #814e83; /* 파란색 계열 */
   height: 80vh;
   font-size: 2rem;
   padding: 20px;
+  display: flex;
+  justify-content: center; /* 섹션을 정가운데 배치 */
+  align-items: center;
   
 }
 
-
-#Skills .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(212, 183, 220);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  border-radius: 15px;
-  width: 90%;
-  margin-top: 50px;
-}
-
 .skill-category {
-  margin: 10px 0;
+  display: flex;
+  flex-direction: row; /* 아이콘과 텍스트를 가로로 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 10px; /* 아이콘과 텍스트 사이 간격 */
+  width: auto; /* 내용물 크기에 맞게 너비 설정 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
 }
 
-.skill-category h2 {
-  font-size: 1.0em;
-  margin-bottom: 5px;
-}
-.skill-category p {
-  font-size: 1.2em;
-}
+
+
+
+

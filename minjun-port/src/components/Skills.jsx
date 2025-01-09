@@ -1,33 +1,25 @@
 import '../css/Skills.css';
 import SkillItem from './SkillItem';
-import '../assets/devIcon1.png';
-import '../assets/devIcon2.png';
-import '../assets/devIcon3.png';
-import '../assets/devIcon4.png';
-import '../assets/devIcon5.png';
+import devIcon1 from '../assets/devIcon1.png';
+import devIcon2 from'../assets/devIcon2.png';
+import devIcon3 from '../assets/devIcon3.png';
+import devIcon4 from'../assets/devIcon4.png';
+import devIcon5 from'../assets/devIcon5.png';
+import devIcon6 from'../assets/devIcon6.png';
 
 
 const Skills = () => {
   const skillsData = [
-    { img:'../assets/devIcon1.png', category: 'Language', skills: ['HTML', 'CSS', 'JavaScript', 'Java'] },
-    { category: 'FrontEnd', skills: ['React.js', 'React Query', 'Redux', 'Axios', 'React Hook Form'] },
-    { category: 'BackEnd', skills: ['Spring Boot', 'MyBatis'] },
-    { category: 'Development Tools', skills: ['Node.js', 'Vercel', 'Naver Cloud', 'Docker', 'Jenkins', 'IntelliJ'] },
-    { category: 'Environment', skills: ['Gradle'] },
-    { category: 'ETC', skills: ['Figma', 'Slack', 'Discord', 'GitHub', 'exERD', 'VS Code'] }
+    { img: devIcon6, category: 'Language', skills: ['HTML', 'CSS', 'JavaScript', 'Java'] },
+    { img: devIcon2, category: 'FrontEnd', skills: ['React.js', 'React Query', 'Redux', 'Axios', 'React Hook Form'] },
+    { img: devIcon1, category: 'BackEnd', skills: ['Spring Boot', 'MyBatis'] },
+    { img: devIcon4, category: 'Development Tools', skills: ['Node.js', 'Vercel', 'Naver Cloud', 'Docker', 'Jenkins', 'IntelliJ'] },
+    { img: devIcon3, category: 'Environment', skills: ['Gradle'] },
+    { img: devIcon5, category: 'ETC', skills: ['Figma', 'Slack', 'Discord', 'GitHub', 'exERD', 'VS Code'] }
   ];
 
   return (
     <section id='Skills' className='container'>
-      <SkillItem
-        skillsData={skillsData}
-      />
-      <SkillItem
-        skillsData={skillsData}
-      />
-      <SkillItem
-        skillsData={skillsData}
-      />
       <SkillItem
         skillsData={skillsData}
       />

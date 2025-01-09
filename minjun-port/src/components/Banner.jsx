@@ -2,7 +2,7 @@ import '../css/Banner.css';
 
 const Banner = () => {
   return (
-    <section id='Banner' className='containner'>
+    <section id='Banner' className='banner-containner'>
      
 
       <h1>석민준</h1>
