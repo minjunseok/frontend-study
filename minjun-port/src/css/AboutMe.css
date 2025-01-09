@@ -1,14 +1,60 @@
 #AboutMe {
    /* 빨간색 계열 */
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* 수직 정렬 */
   font-size: 2rem;
+  
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+ 
+  gap: 20px; /* 사진과 아이템 사이의 간격 */
+  margin-bottom: 200px;
 }
 
 .title h1 {
+  
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+
   display: inline-block; /* 텍스트 길이에 맞게 밑줄을 조정 */
   border-bottom: 1px solid black; /* 밑줄의 두께와 색상 설정 */
   padding-bottom: 5px; /* 텍스트와 밑줄 간의 간격 */
+  
+}
+
+
+.myPhoto {
+  /* 이미지 크기 설정 */
+  height: 100%; /* 이미지 크기 설정 */
+ 
+  margin-left: 60px;
+
+  
+}
+
+
+.myPhoto img {
+  border-radius: 50%;
+  object-fit: cover; /* 이미지의 비율을 유지하며 자르기 */
+}
+
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.icon {
+
+
 }

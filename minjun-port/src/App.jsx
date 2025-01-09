@@ -9,8 +9,7 @@ import Header from './components/Header'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import { Element } from 'react-scroll';
-
-
+import { useState, useEffect } from 'react';
 
 
 
@@ -22,12 +21,27 @@ import { Element } from 'react-scroll';
 
 function App() {
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0); // 스크롤 위치에 따라 상태 변경
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); // 이벤트 리스너 정리
+    };
+  }, []);
+
+
   return (
   
     <div>
       <div>
         <Element name="header">
-          <Header/>
+          <Header isScrolled={isScrolled} /> {/* isScrolled 전달 */}
         </Element>
           <Banner/>
         <Element name="aboutMe">

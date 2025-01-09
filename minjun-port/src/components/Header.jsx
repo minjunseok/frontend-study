@@ -1,9 +1,13 @@
 import '../css/Header.css';
 import { Link } from 'react-scroll';
 
-const Header = () => {
+
+
+const Header = ({isScrolled}) => {
+
+
   return (
-    <section id='Header' className='container'>
+    <section id="Header" className={`containner ${isScrolled ? "scrolled" : ""}`}>
       
       <div className='logo'>
         <Link to="header" smooth={true} duration={600}><button>SMJ's Portfolio</button></Link>
