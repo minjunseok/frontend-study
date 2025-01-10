@@ -8,20 +8,32 @@
   justify-content: center; /* 세로 중앙 정렬 */
   background: url('../assets/background.png') no-repeat center center; /* 배경 이미지 경로 */
   background-size: cover; /* 배경 이미지가 화면을 덮도록 조정 */
-  height: 90vh;
+  height: 80vh;
   text-align: center; /* 텍스트 중앙 정렬 */
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   color: white; /* 텍스트 색상 */
+
   
 }
 
 
+
+
 h4  {
-  white-space: pre-wrap; /* 줄바꿈 및 공백 유지 */
+ 
   line-height: 1.5;    
-  font-size: 20px;  /* 줄 간격 설정 */
+  font-size: 25px;  /* 줄 간격 설정 */
+}
+
+
+.banner-containner h1 {
+
+  display: inline-block; /* 텍스트 길이에 맞게 밑줄을 조정 */
+  border-bottom: 5px solid rgb(238, 122, 60); /* 밑줄의 두께와 색상 설정 */
+  padding-bottom: 2px; /* 텍스트와 밑줄 간의 간격 */
+
 }
 
 

@@ -8,13 +8,15 @@
 .skills-content {
   text-align: center; 
   gap: 0px;
-  margin: 0px;
+  margin-top: 20px;
   background-color: rgb(212, 183, 220);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   padding: 50px;
   border-radius: 15px;
-  width: 100vh;
-  height: 70vh;
+  width: 105vh;
+  height: 75vh;
+  
+  
   
 }
 
@@ -24,7 +26,8 @@
   text-align: center; 
   display: inline-block; /* 텍스트 길이에 맞게 밑줄을 조정 */
   border-bottom: 3px solid rgb(69, 60, 68); /* 밑줄의 두께와 색상 설정 */
-  padding-bottom: 5px; /* 텍스트와 밑줄 간의 간격 */
+  padding-bottom: 2px; /* 텍스트와 밑줄 간의 간격 */
+  margin-top:18px;
   
 }
 
@@ -38,6 +41,7 @@
   font-weight: bold;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* 부드러운 애니메이션 효과 */
+  
 }
 
 .skill-box:hover {
@@ -49,7 +53,7 @@
 .color-0 { background-color: #ac263a; }
 .color-1 { background-color: #c7aa05; }
 .color-2 { background-color: #4d844d; }
-.color-3 { background-color: #0c8d8d; }
+.color-3 { background-color: #092c2c; }
 .color-4 { background-color: #ADD8E6; }
 .color-5 { background-color: #87CEFA; }
 .color-6 { background-color: #FF69B4; }

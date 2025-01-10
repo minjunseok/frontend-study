@@ -1,8 +1,36 @@
-#Archiving {
+
+
+.archive-containner {
+  
+  padding: 110px;
   background-color: #6fcf97; /* 녹색 계열 */
-  height: 100vh;
-  display: flex;
+  height: 50vh;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  text-align: center; 
+
+  
+ 
+}
+
+.archive-containner .archive-content {
+
+margin-top: 50px;
+ display: flex;
+ gap: 30px;
+ justify-content: center;
+ 
+}
+
+.archive-containner h1 {
+
+  font-size: 50px;
+  margin-top: 100px;
+  color: rgb(69, 60, 68);
+  
+  display: inline-block; /* 텍스트 길이에 맞게 밑줄을 조정 */
+  border-bottom: 3px solid rgb(69, 60, 68); /* 밑줄의 두께와 색상 설정 */
+  padding-bottom: 2px; /* 텍스트와 밑줄 간의 간격 */
+  margin-top:18px;
+  
 }
