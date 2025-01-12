@@ -25,6 +25,7 @@ function App() {
   const [isScrolled, setIsScrolled] = useState(false);
 
 
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0); // 스크롤 위치에 따라 상태 변경

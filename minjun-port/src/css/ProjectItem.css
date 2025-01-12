@@ -1,0 +1,33 @@
+.projectitem-containner {
+
+
+  padding:20px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* 카드 그림자 */
+
+}
+
+.project-image {
+  
+   /* 이미지 크기 설정 */
+   height: 200px; /* 이미지 크기 설정 */
+   width: 200px;
+  border-radius: 10%;
+  object-fit: cover; /* 이미지의 비율을 유지하며 자르기 */
+}
+
+.projectitem-containner h3 {
+
+  border-radius: 10px;
+  padding:10px;
+  background-color: rgb(120, 58, 178);
+  font-size: 18px;
+  color: white;
+
+}
+.projectitem-containner p {
+  font-size: 12px;
+}
