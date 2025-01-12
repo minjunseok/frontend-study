@@ -1,0 +1,100 @@
+/* Modal 스타일 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* 스무스 전환 */
+
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  white-space: normal;
+  background: white;
+  padding: 50px;
+  border-radius: 10px;
+  width: 400px;
+  
+  transform: scale(0.8); /* 작아진 상태에서 시작 */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* 부드러운 전환 */
+  opacity: 0;
+  
+
+}
+
+.modal-overlay.active .modal-content {
+  transform: scale(1); /* 원래 크기로 */
+  opacity: 1;
+}
+
+
+.modal-content-title {
+  
+  display: inline-block;
+  font-size: 12px;
+  padding:7px;
+  background-color: rgb(109, 70, 70);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-content-date {
+  padding-bottom: 3px; /* 텍스트와 밑줄 간의 간격 */
+  font-size: 12px;
+  color: rgb(170, 171, 172);
+  border-bottom: 1px solid rgb(186, 185, 185); /* 밑줄의 두께와 색상 설정 */
+  margin-bottom: 6px;
+}
+
+.modal-content-description {
+  padding-top: 4px; /* 텍스트와 밑줄 간의 간격 */
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+
+.modal-content-skill {
+
+  
+  font-size: 10px;
+  padding: 6px;
+  border: 1px solid rgb(200, 123, 15);
+  border-radius: 10px;
+  border-color: solid 2px rgb(76, 65, 48);
+  background-color: rgb(224, 179, 113);
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+
+.modal-content-link {
+
+  font-size: 12px;
+  white-space: nowrap; /* 한 줄로 유지 */
+  overflow: hidden; /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis; /* 말줄임표 추가 */
+  display: block; /* 블록 요소로 변경 */
+  max-width: 100%; /* 부모 컨테이너에 맞게 크기 제한 */
+}
+
+.modal-content-link::before {
+  
+  content: ">";
+  position: absolute;
+  left: 30px; /* 적절한 위치 조정 */
+  color: #007bff; /* > 기호 색상 */
+  font-weight: bold;
+}

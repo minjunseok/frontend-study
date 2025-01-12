@@ -1,6 +1,6 @@
 import '../css/ProjectItem.css';
 
-const ProjectItem = ( {item} ) => {
+const ProjectItem = ( {item, onClick} ) => {
 
 
   // 모달 내 보여져야 할 것
@@ -14,15 +14,13 @@ const ProjectItem = ( {item} ) => {
   // 사용 기술들
 
   return (
-    <div className="projectitem-containner">
-        <img src={item.img} alt={item.title} className="project-image" />
-          <p className='project-date'>{item.date}</p>
-          <h3 className="project-title">{item.title}</h3>
-          <p className="project-description">{item.description}</p>
-
+    <div className="projectitem-containner" onClick={() => onClick(item)}>
+      <img src={item.img} alt={item.title} className="project-image" />
+      <p className="project-date">{item.date}</p>
+      <div className="project-title">{item.title}</div>
+      <p className="project-description">{item.description}</p>
     </div>
-
-  )
-}
+  );
+};
 
 export default ProjectItem

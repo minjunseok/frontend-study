@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Modal from './components/Modal';
 import { Element } from 'react-scroll';
 import { useState, useEffect } from 'react';
 
@@ -23,6 +24,7 @@ import { useState, useEffect } from 'react';
 function App() {
 
   const [isScrolled, setIsScrolled] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
 
 
@@ -57,12 +59,24 @@ function App() {
           <Archiving />
         </Element>
         <Element name="projects">
-          <Projects />
+          <Projects 
+          setSelectedProject={setSelectedProject}/>
         </Element>
         <Element name="career">
           <Career />
         </Element>
         <Footer />
+
+
+
+          {/* Modal */}
+        {selectedProject && (
+          <Modal
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)} // 모달 닫기
+          />
+        )}
+    
       </div>
 
 
