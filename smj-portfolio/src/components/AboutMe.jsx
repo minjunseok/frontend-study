@@ -1,6 +1,6 @@
 import '../css/AboutMe.css';
 import AboutItem from './AboutItem';
-import myphoto from '../assets/Myphoto.jpeg';
+import myphoto from '../assets/myphoto.jpeg';
 import icon1 from '../assets/user-Icon.png';
 import icon2 from '../assets/mail-Icon.png';
 import icon3 from '../assets/date-Icon.png';
