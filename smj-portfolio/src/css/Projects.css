@@ -1,0 +1,34 @@
+
+.project-container {
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열 레이아웃 */
+  border-radius: 10px;
+  gap: 60px; /* 항목 사이 간격 */
+  padding: 20px;
+  justify-content: center; /* 전체 정렬 */
+  align-items: start; /* 세로 정렬 */
+}
+
+#Projects {
+  
+  background-color: #bb6bd9; /* 보라색 계열 */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.project-section h2 {
+
+  color: rgb(93, 23, 84);
+  margin-top: 120px;
+   text-align: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+  display: inline-block; /* 텍스트 길이에 맞게 밑줄을 조정 */
+  border-bottom: 3px solid rgb(93, 23, 84); /* 밑줄의 두께와 색상 설정 */
+  padding-bottom: 2px; /* 텍스트와 밑줄 간의 간격 */
+}

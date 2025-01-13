@@ -1,0 +1,103 @@
+/* CSS 파일 */
+
+.career-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e5e2d7;
+  height: ;
+  padding: 125px;
+}
+
+.career-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  
+}
+
+.career-title {
+  font-size: 50px;
+  color: rgb(132, 119, 101);
+  text-align: center;
+  margin-bottom: 50px;
+  border-bottom: 3px solid rgb(132, 119, 101);
+  padding-bottom: 2px;
+}
+
+.career-img {
+  padding-top: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+ 
+}
+
+.career-img img {
+  height: 150px; /* 이미지 크기 설정 */
+   width: 250px;
+ border-radius: 3%;
+ object-fit: cover; /* 이미지의 비율을 유지하며 자르기 */
+}
+
+.job-containner {
+
+  padding-bottom: 10px;
+}
+
+.career-content {
+  width: 60;
+}
+
+.title1 {
+  padding-bottom: 20px;
+}
+.edu-content {
+  padding-bottom: 40px;
+}
+
+.company-content h4{
+
+  font-size:16px;
+}
+
+
+.ncp-content {
+  border-bottom: 1px solid rgb(132, 119, 101);
+}
+
+.crn-content {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(132, 119, 101);
+}
+
+.teamproject-content{
+  border-bottom: 1px solid rgb(132, 119, 101);
+}
+
+
+.onebite-content {
+
+  padding-bottom: 26px;
+  border-bottom: 1px solid rgb(132, 119, 101);
+}
+
+.title1, .title2, .develop-content-title {
+  font-size: 20px;
+  color: rgb(103, 75, 33);
+}
+
+
+
+.edu-content ul li, 
+.company-content ul li, 
+.develop-content ul li {
+  margin-bottom: 21px; /* 각 항목 간격 */
+  line-height: 2.0;    /* 줄 간격 */
+}
+
+.career-container a {
+  font-size: 15px;
+  color: rgb(155, 146, 134);
+  
+}

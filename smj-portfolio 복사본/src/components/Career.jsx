@@ -105,7 +105,7 @@ const Career = () => {
               <br/>
               &nbsp;&nbsp;&nbsp;팀장 역할 및 앱 내 커뮤니티 부분 CRUD, UI 프론트엔드, 프로토타입 구현 담당
               <br/>
-              -JAVA,HTML,CSS,JavaScript데이터베이스 및 네트워크,스레드 프로그래밍,서버 렌더링 방식 웹프로그래밍<br/>
+              -JAVA,HTML,CSS,JavaScript,데이터베이스 및 네트워크,스레드 프로그래밍,서버 렌더링 방식 웹프로그래밍<br/>
               &nbsp;&nbsp;&nbsp;,스프링 부트,스프링 프레임워크,스프링 데이터,,
               API  프로그래밍
               <br/>

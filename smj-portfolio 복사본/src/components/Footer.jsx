@@ -3,7 +3,9 @@ import '../css/Footer.css';
 const Footer = () => {
   return (
     <section id='Footer' className='containner'>
-      <h1>푸터입니다.</h1>
+      <div className='footer-content'>
+       © 2025.Seok Min jun. All rights reserved.
+      </div>
     </section>
   )
 }

@@ -1,0 +1,12 @@
+#Footer {
+  text-align: center;
+  justify-content: center;
+  background-color: #000000;
+  height: 10vh;
+}
+
+.footer-content{
+  
+  color: rgb(201, 201, 201);
+  font-size: 10px;
+}

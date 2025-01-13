@@ -1,0 +1,81 @@
+#Header {
+  
+  top: 0;
+  width: 100%; /* 화면 너비 전체를 차지 */
+  height: 100px; /* 헤더 높이 지정 (필요에 따라 조정) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+#Header.scrolled {
+  background-color: white; /* 스크롤 시 배경색 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 아래쪽으로 부드러운 그림자 추가 */
+}
+
+#Header:not(.scrolled) {
+  background-color: transparent; /* 초기 배경 투명 */
+  box-shadow: none; /* 스크롤 전에는 그림자 제거 */
+}
+
+#Header:not(.scrolled) .logo button,
+#Header:not(.scrolled) .button button {
+  color: #ffffff; /* 초기 상태에서 버튼 색상 변경 */
+}
+
+
+#Header:not(.scrolled) .logo button:hover,
+#Header:not(.scrolled) .button button:hover {
+  color: #765e5e; /* 초기 상태에서 버튼 색상 변경 */
+}
+
+
+.logo button {
+  
+  font-size:15px;
+  border: none;
+ 
+
+  background: none;
+  transition: color 0.3s ease; 
+
+
+}
+
+/* 커서를 텍스트 위에 올렸을 때 */
+.logo button:hover {
+
+  color: #d1bfbc; /* 텍스트 색상 변경 */
+  
+}
+
+.button {
+
+  cursor: pointer;
+
+}
+
+.button button {
+  
+  padding: 10px;
+  font-size:15px;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  background: none;
+  transition: color 0.3s ease; 
+
+  
+
+}
+
+/* 커서를 텍스트 위에 올렸을 때 */
+.button button:hover {
+
+  color: #d1bfbc; /* 텍스트 색상 변경 */
+  
+}
+

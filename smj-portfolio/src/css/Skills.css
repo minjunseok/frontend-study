@@ -1,0 +1,31 @@
+
+
+#Skills {
+  
+ 
+  background-color: #814e83; /* 파란색 계열 */
+  height: 90vh;
+  font-size: 2rem;
+  padding: 100px;
+  display: flex;
+  justify-content: center; /* 섹션을 정가운데 배치 */
+  align-items: center;
+  
+  
+}
+
+.skill-category {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row; /* 아이콘과 텍스트를 가로로 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 10px; /* 아이콘과 텍스트 사이 간격 */
+  width: au0to; /* 내용물 크기에 맞게 너비 설정 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+  
+}
+
+
+
+
+
