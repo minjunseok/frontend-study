@@ -1,3 +1,12 @@
+
+.skills-content * {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  
+
+}
+
+
 .skill-icon {
  
   width: 50px; /* 원하는 최대 가로 크기 */
@@ -6,15 +15,18 @@
 }
 
 .skills-content {
+  
+  
   text-align: center; 
   gap: 0px;
   margin-top: 20px;
-  background-color: rgb(212, 183, 220);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: rgb(155, 155, 155);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 50px;
   border-radius: 15px;
-  width: 105vh;
-  height: 75vh;
+  width: 90vh;
+  height: 50vh;
+  
   
   
   
@@ -22,23 +34,23 @@
 
 .skills-content h1 {
 
-  color: rgb(69, 60, 68);
+  color: #E0E0E0;
   text-align: center; 
   display: inline-block; /* 텍스트 길이에 맞게 밑줄을 조정 */
-  border-bottom: 3px solid rgb(69, 60, 68); /* 밑줄의 두께와 색상 설정 */
+  border-bottom: 3px solid #E0E0E0; /* 밑줄의 두께와 색상 설정 */
   padding-bottom: 2px; /* 텍스트와 밑줄 간의 간격 */
   margin-top:18px;
+  margin-bottom:20px;
   
 }
 
 .skill-box {
   display: inline-block;
   margin: 5px;
-  padding: 10px 15px;
-  border-radius: 50px; /* 타원형 박스 */
-  color: #fff; /* 텍스트 색상 */
-  font-size: 14px;
-  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px; /* 타원형 박스 */
+  color: #E0E0E0; /* 텍스트 색상 */
+  font-size: 12px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* 부드러운 애니메이션 효과 */
   
@@ -54,14 +66,14 @@
 .color-1 { background-color: #c7aa05; }
 .color-2 { background-color: #4d844d; }
 .color-3 { background-color: #092c2c; }
-.color-4 { background-color: #ADD8E6; }
+.color-4 { background-color: #4a5e65; }
 .color-5 { background-color: #154c6e; }
-.color-6 { background-color: #FF69B4; }
+.color-6 { background-color: #54444c; }
 .color-7 { background-color: #CD5C5C; }
 .color-8 { background-color: #805129; }
 .color-9 { background-color: #1919b6; }
-.color-10 { background-color: #d6805e; }
-.color-11 { background-color: #20B2AA; }
+.color-10 { background-color: #441c0d; }
+.color-11 { background-color: #07423f; }
 .color-12 { background-color: #B0C4DE; }
 .color-13 { background-color: #7a3c46; }
 .color-14 { background-color: #DDA0DD; }
@@ -72,5 +84,5 @@
 .color-19 { background-color: #8FBC8F; }
 .color-20 { background-color: #DAA520; }
 .color-21 { background-color: #1e9288; }
-.color-22 { background-color: #ff9b7f; }
+.color-22 { background-color: #da481f; }
 .color-23 { background-color: #aa6c0e; }

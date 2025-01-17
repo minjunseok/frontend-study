@@ -3,10 +3,10 @@
 
   padding:20px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(155, 155, 155);
   text-align: center;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* 카드 그림자 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 카드 그림자 */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* 부드러운 전환 */
   cursor: pointer; /* 클릭 가능한 커서 */
 
@@ -30,13 +30,15 @@
   display: inline-block;
   border-radius: 10px;
   padding:8px;
-  background-color: rgb(120, 58, 178);
+  background-color: rgb(86, 75, 96);
+  margin-bottom: 10px;
   font-size: 15px;
   color: white;
 
 }
 .projectitem-containner p {
-  font-size: 12px;
+  font-size: 14px;
+  color: #E0E0E0;
 }
 
 

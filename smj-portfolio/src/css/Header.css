@@ -9,6 +9,7 @@
   align-items: center;
   position: fixed;
   transition: background-color 0.3s ease;
+  z-index: 1000;
 
 }
 
@@ -75,7 +76,8 @@
   
 }
 
-.button button{
+.button button,
+.logo button{
 
   cursor: pointer;
 

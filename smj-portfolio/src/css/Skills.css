@@ -3,7 +3,7 @@
 #Skills {
   
  
-  background-color: #814e83; /* 파란색 계열 */
+  background-color: #222222;
   height: 90vh;
   font-size: 2rem;
   padding: 100px;
@@ -15,7 +15,10 @@
 }
 
 .skill-category {
-  font-size: 18px;
+  
+
+  font-size: 14px;
+  color:#E0E0E0;
   display: flex;
   flex-direction: row; /* 아이콘과 텍스트를 가로로 배치 */
   align-items: center; /* 세로 중앙 정렬 */

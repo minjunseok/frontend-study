@@ -73,7 +73,10 @@ const Projects = ({ setSelectedProject }) => {
 
   return (
     <section id="Projects" className="project-section">
-      <h2>PROJECTS</h2>
+      <div className='eng-title-wrap'>
+        PROJECTS
+      </div>
+      
       <div className="project-container">
         {projectItems.map((item) => (
           <ProjectItem
