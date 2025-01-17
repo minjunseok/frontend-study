@@ -21,7 +21,10 @@ const Archiving = () => {
   return (
     <section id='Archiving' className='archive-containner'>
       
-        <h1>ARCHIVING</h1>
+      <div className='eng-title-wrap'>
+          ARCHIVING
+      </div>
+        
         <div className='archive-content'>
         {linkItems.map((item, index) => (
             <LinkBox

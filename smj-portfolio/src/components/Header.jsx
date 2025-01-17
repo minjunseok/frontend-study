@@ -14,11 +14,16 @@ const Header = ({isScrolled}) => {
       </div>
       
       <div className='button'>
+
+      <Link to="archiving" smooth={true} duration={600}><button>Archiving</button></Link>
+      <Link to="skills" smooth={true} duration={600}><button>Skills</button></Link>
+      <Link to="projects" smooth={true} duration={600}><button>Projects</button></Link>
+      <Link to="career" smooth={true} duration={600}><button>Career</button></Link>
         <Link to="aboutMe" smooth={true} duration={600}><button>About Me</button></Link>
-        <Link to="archiving" smooth={true} duration={600}><button>Archiving</button></Link>
-        <Link to="career" smooth={true} duration={600}><button>Career</button></Link>
-        <Link to="projects" smooth={true} duration={600}><button>Projects</button></Link>
-        <Link to="skills" smooth={true} duration={600}><button>Skills</button></Link>
+        
+      
+        
+        
       </div>
     </section>
   );

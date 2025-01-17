@@ -12,7 +12,7 @@ const AboutMe = () => {
 
     
     <section id='AboutMe' className='containner'>
-      <div className='title'>
+      <div className='eng-title-wrap'>
         <h1>ABOUT ME</h1>
       </div>
         <div className='content'>

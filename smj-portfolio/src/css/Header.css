@@ -1,24 +1,47 @@
 #Header {
   
   top: 0;
-  width: 100%; /* 화면 너비 전체를 차지 */
-  height: 100px; /* 헤더 높이 지정 (필요에 따라 조정) */
+  padding:0px;
+  min-width: 100%; /* 화면 너비 전체를 차지 */
+  height: 5vh; /* 헤더 높이 지정 (필요에 따라 조정) */
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease;
 
 }
 
+
+
 #Header.scrolled {
-  background-color: white; /* 스크롤 시 배경색 */
+  background-color: #3f3f3f; /* 스크롤 시 배경색 */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 아래쪽으로 부드러운 그림자 추가 */
+}
+
+.containnerscrolled .button button{
+
+  color: white;
+
 }
 
 #Header:not(.scrolled) {
   background-color: transparent; /* 초기 배경 투명 */
   box-shadow: none; /* 스크롤 전에는 그림자 제거 */
+  color: white;
+}
+
+
+/* 스크롤되었을 때 버튼 색상을 강제 적용 */
+#Header.scrolled .logo button,
+#Header.scrolled .button button {
+  color: white; /* 흰색으로 유지 */
+}
+
+/* 스크롤되었을 때 버튼 색상을 강제 적용 */
+#Header.scrolled .logo button:hover,
+#Header.scrolled .button button:hover {
+  color: #765e5e; /* 흰색으로 유지 */
 }
 
 #Header:not(.scrolled) .logo button,
@@ -52,7 +75,7 @@
   
 }
 
-.button {
+.button button{
 
   cursor: pointer;
 

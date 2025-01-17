@@ -19,13 +19,7 @@
 
 .title h1 {
   
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  margin-top: 20px;
-
-  display: inline-block; /* 텍스트 길이에 맞게 밑줄을 조정 */
-  border-bottom: 3px solid black; /* 밑줄의 두께와 색상 설정 */
-  
+ 
   
 }
 

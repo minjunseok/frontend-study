@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: white; /* 텍스트 색상 */
+  color: #E0E0E0; /* 텍스트 색상 */
 
   
 }
@@ -37,6 +37,11 @@
 }
 
 
+.banner-containner .kor-title-wrap {
+
+  margin-bottom: 30px;
+
+}
 
 
 
