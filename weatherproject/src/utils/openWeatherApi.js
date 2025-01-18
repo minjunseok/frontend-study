@@ -14,7 +14,7 @@ export const getCurrentLocation = async () => {
       (position) => {
         const lat = position.coords.latitude;
         const lon = position.coords.longitude;
-        console.log("현재 위치", lat, lon);
+       
         resolve({ lat, lon }); // 위치 데이터를 반환
       },
       (error) => {
@@ -30,7 +30,7 @@ export const getCurrentLocation = async () => {
 export const getLocationAirPollution = async (lat, lon) => {
 
 
-    console.log("미세먼지 함수 실행!");
+ 
 
     let url2 = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=73c10d78497ac8346d911fea8f5418d6`;
 
