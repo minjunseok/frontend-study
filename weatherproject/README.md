@@ -1,8 +1,19 @@
-# React + Vite
+# 오둥이 날씨 프로젝트
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br/>
+
+Open Weather Api를 활용한 간단한 날씨 프로젝트입니다.
+
+<br/>
+
+국내 기준 날씨 정보,미세먼지 정보를 확인할 수 있고
+
+<br/>
+
+중국,미국,일본의 수도 위치 기준 날씨 정보까지 확인할 수 있습니다.
+
+<br/>
+
+
