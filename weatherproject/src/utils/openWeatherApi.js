@@ -32,7 +32,7 @@ export const getLocationAirPollution = async (lat, lon) => {
 
     console.log("미세먼지 함수 실행!");
 
-    let url2 = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=73c10d78497ac8346d911fea8f5418d6`;
+    let url2 = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=73c10d78497ac8346d911fea8f5418d6`;
 
     try {
 
