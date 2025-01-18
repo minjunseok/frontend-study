@@ -8,8 +8,6 @@ import { getLocationAirPollution,
          getCurrentLocation,
        } from './utils/openWeatherApi';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
 import WeatherBox from './components/WeatherBox';
 import WeatherButton from './components/WeatherButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -123,7 +121,7 @@ function App() {
     <div>
    
       <div className="container">
-        <Header />
+
         {loading ? (
            <GridLoader 
            color = "#fff"
@@ -146,7 +144,7 @@ function App() {
           />
           </div>
         )}
-        <Footer />
+
       </div>
      
 

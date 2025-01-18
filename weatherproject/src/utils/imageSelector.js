@@ -1,9 +1,9 @@
-import odung1 from '../assets/오둥더움.png';
-import odung2 from '../assets/오둥맑음.png';
-import odung3 from '../assets/오둥이흐림.png';
-import odung4 from '../assets/오둥이비.png';
-import odung5 from '../assets/오둥폭우.png';
-import odung6 from '../assets/오둥이눈.png';
+import odung1 from '../assets/sunny.png';
+import odung2 from '../assets/well.png';
+import odung3 from '../assets/bad.png';
+import odung4 from '../assets/rain.png';
+import odung5 from '../assets/heavyrain.png';
+import odung6 from '../assets/snow.png';
 
 
 export function imageSelector (id) {
