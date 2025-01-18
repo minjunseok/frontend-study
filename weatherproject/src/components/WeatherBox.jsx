@@ -6,8 +6,7 @@ import { dustLevel } from "../utils/dustLevel";
 
 const WeatherBox = ( {weather , airPollution, city} ) => {
 
-  console.log("weather",weather);
-  console.log("airPollution",airPollution);
+
 
   if(!weather) {
 
@@ -24,7 +23,7 @@ const WeatherBox = ( {weather , airPollution, city} ) => {
   //받아온 날씨id, 날씨 문자열
   const [id, description] = getWeatherDescription(weather.weather[0].main);
 
-  console.log([id, description]);
+
 
 
   // 날씨 이미지 선택

@@ -65,7 +65,7 @@ export const getLocationAirPollution = async (lat, lon) => {
 
     export const getWeatherByCurrentLocation = async (lat, lon) => {
   
-      console.log("날씨 측정 함수 실행!");
+ 
   
       let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=73c10d78497ac8346d911fea8f5418d6&units=metric`;
       

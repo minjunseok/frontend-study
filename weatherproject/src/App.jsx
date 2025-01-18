@@ -54,7 +54,7 @@ function App() {
 
     let data = await response.json();
     
-    console.log("Data", data);
+
 
     setWeather(data);
 
@@ -71,7 +71,7 @@ function App() {
 
     try {
       const { lat, lon } = await getCurrentLocation(); // 위치 정보 가져오기
-      console.log("가져온 위치", lat, lon);
+   
 
       const weatherData = await getWeatherByCurrentLocation(lat, lon);
       setWeather(weatherData);

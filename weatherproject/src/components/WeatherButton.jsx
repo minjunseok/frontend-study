@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 
 const WeatherButton = ({cities,setCity,fetchWeatherAndAirPollution}) => {
 
-  console.log(cities);
+
 
   return (
     <div>
