@@ -12,6 +12,7 @@
 
 #Projects {
   
+  padding-top: 75px;
   background-color: #222222; 
   display: flex;
   flex-direction: column;

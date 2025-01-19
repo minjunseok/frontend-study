@@ -7,11 +7,8 @@
 
 }
 
-h2, h3 {
-  margin: 5px 0; /* 제목 간격 조정 */
-  font-size: 15px; /* 글자 크기 축소 */
-  
-}
+
+
 
 .icon img {
   width: 40px; /* 아이콘 크기 */
@@ -21,21 +18,26 @@ h2, h3 {
 
 
 .text {
+
   display: flex;
   flex-direction: column; /* h2와 h3를 세로로 정렬 */
+
 }
 
 
 .text h2 {
-  font-size: 1rem; /* 적절한 폰트 크기 설정 */
-  font-weight: bold;
-  margin: 0; /* 불필요한 여백 제거 */
+  color: #E0E0E0;
+
+  font-size: 1.1rem; /* 적절한 폰트 크기 설정 */
+
+  
+  margin-bottom: 10px;
 }
 
 .text h3 {
   
   font-family: sans-serif; /* 기본 폰트로 설정 */
-  font-size: 0.9rem; /* h2보다 조금 작은 크기 */
+  font-size: 16px; /* h2보다 조금 작은 크기 */
   font-weight: normal;
-  color: gray; /* 보조적인 정보로 표현 */
+  color: #E0E0E0;/* 보조적인 정보로 표현 */
 }

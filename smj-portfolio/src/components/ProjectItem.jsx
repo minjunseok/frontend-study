@@ -19,6 +19,7 @@ const ProjectItem = ( {item, onClick} ) => {
       <p className="project-date">{item.date}</p>
       <div className="project-title">{item.title}</div>
       <p className="project-description">{item.description}</p>
+      
     </div>
   );
 };

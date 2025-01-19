@@ -7,7 +7,9 @@ const Career = () => {
   return (
     
     <section id='Career' className='career-container'>
-      <div className='career-title'>CAREER</div>
+      <div className='eng-title-wrap'>
+        CAREER
+      </div>
 
       <div className='career-content-wrapper'>
           <div className='career-img'>
@@ -25,20 +27,7 @@ const Career = () => {
         <div className='job-containner'>
 
 
-          <div className='edu-content'>
-              <div className='title1'>
-                학력
-              </div>
-                <ul>
-                  <li>
-                    동서울대학교 디지털전자과 졸업&nbsp;&nbsp;
-                    <a>
-                      2014.03 ~ 2019.02
-                    </a>
-                  </li>
-                  
-                </ul>
-          </div>
+  
           
         
 

@@ -25,15 +25,33 @@ const Modal = ({ project, onClose }) => {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className='modal-content-title'>{project.title}</div>
         <div className='modal-content-date'>{project.date}</div>
+        <div className='modal-content-label1'>💻 프로젝트 설명 : </div>
         <div className='modal-content-description'>{project.description}</div>
+        <div className='modal-content-label2'>🤔 프로젝트 목적 : </div>
+        <div className='modal-content-review'>{project.review}</div>
+        <div className='modal-content-label2'>💡 프로젝트 후기 : </div>
+        <div className='modal-content-meaning'>{project.meaning}</div>
+        
+        <div className='modal-content-label3'>🛠️ 사용된 기술 : </div>
         <div className='modal-content-skill'>{project.skill}</div>
-        <div className='modal-content-link'>
+        <div className='modal-content-link1'>
+          <h4>배포:</h4>
           <a
-          href={project.link} // 외부 링크 URL
+          href={project.link1} // 외부 링크 URL
           target="_blank" // 새 탭에서 열기
           rel="noopener noreferrer" // 보안 상 권장 속성
           >
-          {project.link}
+          {project.link1}
+          </a>
+        </div>
+        <div className='modal-content-link2'>
+          <h4>소스:</h4>
+          <a
+          href={project.link2} // 외부 링크 URL
+          target="_blank" // 새 탭에서 열기
+          rel="noopener noreferrer" // 보안 상 권장 속성
+          >
+          {project.link2}
           </a>
         </div>
     
@@ -42,4 +60,4 @@ const Modal = ({ project, onClose }) => {
   );
 };
 
-export default Modal;
+export default Modal; 

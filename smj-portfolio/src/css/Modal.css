@@ -1,3 +1,11 @@
+.modal-content > div {
+
+  margin-bottom: 18px;
+  font-size:14px;
+
+
+}
+
 /* Modal 스타일 */
 .modal-overlay {
   position: fixed;
@@ -61,27 +69,41 @@
 
 .modal-content-description {
   padding-top: 4px; /* 텍스트와 밑줄 간의 간격 */
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 20px;
 }
+
+.modal-content-review {
+
+  font-size: 14px;
+}
+
+.modal-content-meaning {
+
+  font-size: 14px;
+}
+
 
 
 .modal-content-skill {
 
-  
-  font-size: 10px;
+  color: white;
+  font-size: 14px;
   padding: 6px;
-  border: 1px solid rgb(200, 123, 15);
+  border: 1px solid rgb(96, 96, 96);
   border-radius: 10px;
   border-color: solid 2px rgb(76, 65, 48);
-  background-color: rgb(224, 179, 113);
+  background-color: rgb(86, 75, 96);
   display: inline-block;
   margin-bottom: 30px;
 }
 
 
-.modal-content-link {
+.modal-content-link1,
+.modal-content-link2 {
 
+
+  margin-top: 20px;
   font-size: 12px;
   white-space: nowrap; /* 한 줄로 유지 */
   overflow: hidden; /* 넘치는 텍스트 숨김 */

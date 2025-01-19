@@ -1,106 +1,52 @@
+/* 헤더 스타일 복구 및 기본 설정 */
 #Header {
-  
   top: 0;
-  padding:0px;
+  padding: 0px;
   min-width: 100%; /* 화면 너비 전체를 차지 */
   height: 5vh; /* 헤더 높이 지정 (필요에 따라 조정) */
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  background-color: transparent;
   transition: background-color 0.3s ease;
   z-index: 1000;
-
 }
 
-
-
+/* 스크롤 시 헤더 스타일 변경 */
 #Header.scrolled {
-  background-color: #3f3f3f; /* 스크롤 시 배경색 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 아래쪽으로 부드러운 그림자 추가 */
+  background-color: #3f3f3f;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.containnerscrolled .button button{
-
+/* 링크 기본 스타일 */
+#Header .logo a,
+#Header .button a {
+  font-size: 15px;
+  text-decoration: none;
   color: white;
-
-}
-
-#Header:not(.scrolled) {
-  background-color: transparent; /* 초기 배경 투명 */
-  box-shadow: none; /* 스크롤 전에는 그림자 제거 */
-  color: white;
-}
-
-
-/* 스크롤되었을 때 버튼 색상을 강제 적용 */
-#Header.scrolled .logo button,
-#Header.scrolled .button button {
-  color: white; /* 흰색으로 유지 */
-}
-
-/* 스크롤되었을 때 버튼 색상을 강제 적용 */
-#Header.scrolled .logo button:hover,
-#Header.scrolled .button button:hover {
-  color: #765e5e; /* 흰색으로 유지 */
-}
-
-#Header:not(.scrolled) .logo button,
-#Header:not(.scrolled) .button button {
-  color: #ffffff; /* 초기 상태에서 버튼 색상 변경 */
-}
-
-
-#Header:not(.scrolled) .logo button:hover,
-#Header:not(.scrolled) .button button:hover {
-  color: #765e5e; /* 초기 상태에서 버튼 색상 변경 */
-}
-
-
-.logo button {
+  transition: color 0.3s ease;
   
-  font-size:15px;
-  border: none;
- 
-
-  background: none;
-  transition: color 0.3s ease; 
-
-
-}
-
-/* 커서를 텍스트 위에 올렸을 때 */
-.logo button:hover {
-
-  color: #d1bfbc; /* 텍스트 색상 변경 */
-  
-}
-
-.button button,
-.logo button{
-
-  cursor: pointer;
-
-}
-
-.button button {
-  
-  padding: 10px;
-  font-size:15px;
-  border: none;
   margin: 10px;
   padding: 10px;
-  background: none;
-  transition: color 0.3s ease; 
-
-  
-
 }
 
-/* 커서를 텍스트 위에 올렸을 때 */
-.button button:hover {
-
-  color: #d1bfbc; /* 텍스트 색상 변경 */
-  
+/* 호버 시 텍스트 색상 변경 */
+#Header .logo a:hover,
+#Header .button a:hover {
+  color: #d1bfbc;
+  cursor: pointer;
 }
 
+/* 스크롤 시 색상 유지 */
+#Header.scrolled .logo a,
+#Header.scrolled .button a {
+  color: white;
+}
+
+/* 스크롤 시 호버 색상 */
+#Header.scrolled .logo a:hover,
+#Header.scrolled .button a:hover {
+  color: #765e5e;
+  cursor: pointer;
+}

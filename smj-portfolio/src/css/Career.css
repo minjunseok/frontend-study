@@ -4,9 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e5e2d7;
-  height: ;
+  background-color: #222222;
+  height: 100%;
   padding: 125px;
+}
+
+.career-container .eng-title-wrap {
+
+  margin-bottom: 40px;
 }
 
 .career-content-wrapper {
@@ -16,20 +21,12 @@
   
 }
 
-.career-title {
-  font-size: 50px;
-  color: rgb(132, 119, 101);
-  text-align: center;
-  margin-bottom: 50px;
-  border-bottom: 3px solid rgb(132, 119, 101);
-  padding-bottom: 2px;
-}
 
 .career-img {
-  padding-top: 520px;
+  padding-top: 300px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 32px;
  
 }
 
@@ -46,7 +43,10 @@
 }
 
 .career-content {
+  font-size: 14px;
   width: 60;
+  font-weight: 200;
+  color:#E0E0E0;
 }
 
 .title1 {
@@ -56,23 +56,27 @@
   padding-bottom: 40px;
 }
 
-.company-content h4{
 
-  font-size:16px;
-}
 
 
 .ncp-content {
+  margin-bottom: 10px;
   border-bottom: 1px solid rgb(132, 119, 101);
+  padding-bottom: 15px;
+  padding-top:15px;
 }
 
 .crn-content {
-  padding-bottom: 20px;
+  
+  padding-bottom: 25px;
   border-bottom: 1px solid rgb(132, 119, 101);
 }
 
 .teamproject-content{
+  
   border-bottom: 1px solid rgb(132, 119, 101);
+  padding-bottom: 15px;
+  padding-top:15px;
 }
 
 
@@ -83,8 +87,10 @@
 }
 
 .title1, .title2, .develop-content-title {
-  font-size: 20px;
-  color: rgb(103, 75, 33);
+  
+  font-size: 16px;
+  color:rgb(234, 204, 204);
+  margin-bottom: 13px;
 }
 
 
@@ -98,6 +104,6 @@
 
 .career-container a {
   font-size: 15px;
-  color: rgb(155, 146, 134);
+ color:rgb(155, 155, 155);
   
 }

@@ -32,6 +32,7 @@
   font-size: 2.5rem;
   margin-bottom: 20px;
   margin-top: 20px;
+  font-weight: normal;
 
   display: inline-block; /* 텍스트 길이에 맞게 밑줄을 조정 */
   border-bottom: 3px solid #E0E0E0; /* 밑줄의 두께와 색상 설정 */
@@ -47,7 +48,7 @@
 
 h1 { 
 
-  font-size: 2.1rem;
+  font-size: 3.1rem;
 
 }
 
