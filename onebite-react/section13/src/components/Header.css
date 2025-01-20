@@ -1,0 +1,26 @@
+.Header > h1{
+  color: rgb(255, 215, 0);
+  
+
+
+};
+
+.Header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* 이미지 컨테이너 */
+.image-container-odung {
+  display: flex; /* Flexbox로 가로 정렬 */
+  justify-content: center; /* 이미지를 가운데 정렬 */
+  align-items: center; /* 세로축 중앙 정렬 */
+  gap: 20px; /* 두 이미지 사이에 20px 간격 추가 */
+}
+
+/* 이미지 스타일 */
+.header-odung {
+  width: 50%; /* 원래 크기의 50%로 축소 */
+  max-width: 150px; /* 최대 크기 제한 */
+  height: auto; /* 비율 유지 */
+}

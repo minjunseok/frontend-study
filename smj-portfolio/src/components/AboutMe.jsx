@@ -1,12 +1,12 @@
 import '../css/AboutMe.css';
 import AboutItem from './AboutItem';
 import myphoto from '../assets/myphoto.jpeg';
-import icon1 from '../assets/user-Icon.png';
-import icon2 from '../assets/mail-Icon.png';
-import icon3 from '../assets/date-Icon.png';
-import icon4 from '../assets/phone-Icon.png';
-import icon5 from '../assets/edu-Icon.png';
-import icon7 from '../assets/testicon.png'
+import icon1 from '../assets/userIcon.png';
+import icon2 from '../assets/mailIcon.png';
+import icon3 from '../assets/dateIcon.png';
+import icon4 from '../assets/phoneIcon.png';
+import icon5 from '../assets/eduIcon.png';
+import icon6 from '../assets/testIcon.png';
 const AboutMe = () => {
   return (
 
@@ -25,7 +25,7 @@ const AboutMe = () => {
             <AboutItem icon={icon3} label='생년월일' value='95.05.26'/>
             <AboutItem icon={icon4} label='연락처' value='010-3835-8722'/>
             <AboutItem icon={icon5} label='학력' value='동서울대학교 디지털전자과'/>
-            <AboutItem icon={icon7} label='지역' value='성남시 수정구'/>
+            <AboutItem icon={icon6} label='지역' value='성남시 수정구'/>
           </div>
         </div>
      

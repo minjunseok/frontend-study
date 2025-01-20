@@ -21,7 +21,7 @@ const Projects = ({ setSelectedProject }) => {
       title: '5인 팀프로젝트 - Tickke',
       description: '티켓 리셀 매물과 양도 매물을 쉽게 확인 할 수 있는 애플리케이션' ,
       review: '티켓 매물 관련 다양한 앱을 뒤져봐야하는 번거로움을 해소하기 위하여 기획',
-      meaning: '',
+      meaning: '미완성 앱으로 전반적인 앱의 UI 파트와,Front End 소스 담당 구현 예정',
       link1:'',
       link2:'https://github.com/Team-Tikke',
       img:tp2,
